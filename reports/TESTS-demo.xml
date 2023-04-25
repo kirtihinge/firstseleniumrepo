@@ -1,0 +1,39 @@
+<testsuite name="demo.guru 99 new account page" tests="2" errors="0" failures="1" skipped="0" time="25.037655" timestamp="2023-03-14T22:19:17.764148" hostname="HP"><testcase classname="demo.guru 99 new account page" name="to check login page" status="passed" time="10.931272"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: to check login page
+    Given open chrome browser ... passed in 1.740s
+    When Enter url ... passed in 9.181s
+    Then login page should be displayed ... passed in 0.010s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="demo.guru 99 new account page" name="to check home page" status="failed" time="14.106383"><failure type="AssertionError" message="">
+<![CDATA[
+Failing step: And home page should be displayed ... failed in 0.021s
+Location: features/demo.feature:12
+Traceback (most recent call last):
+  File "C:\Users\pravi\AppData\Local\Programs\Python\Python311\Lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+  File "C:\Users\pravi\AppData\Local\Programs\Python\Python311\Lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "features\steps\demo.py", line 37, in step_impl
+    assert title=="Guru99 Bank Manager Home Page"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+]]>
+</failure><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: to check home page
+    Given open chrome browser ... passed in 1.681s
+    When Enter url ... passed in 9.126s
+    And Enter username <mngr482183> and password < EbApYpe > ... passed in 3.274s
+    Then login page should be displayed ... passed in 0.003s
+    And home page should be displayed ... failed in 0.021s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>
